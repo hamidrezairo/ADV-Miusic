@@ -17,7 +17,7 @@ const client = new Client({
 const { printWatermark } = require('./functions/handlers');
 const configPath = './config.json';
 const configData = JSON.parse(fs.readFileSync(configPath));
-const prefix = configData.prefix;
+const prefix = +;
 
 
 const app = express();
